@@ -24,14 +24,14 @@
 	</head>
 	<body>
 	<!-- ! -->
-	<section class="info bg-light">
+	<section class="info bg-light pt-1 pb-0">
 		<div class="container">
 			<div class="row">
 				<div class="col d-none d-sm-none d-md-none d-lg-block">
-					<i class="fa-solid fa-phone"></i> +1 234 56789
+					<p><em>Welcome to BooShop clean template on Bootstrap 5.</em></p>
 				</div>
-				<div class="col d-none d-sm-none d-md-none d-lg-block">
-					<i class="fa-solid fa-envelope"></i> shop@bootsrap.com
+				<div class="col d-none d-sm-none d-md-none d-lg-block text-end">
+					<i class="fa-solid fa-square-phone text-muted"></i> +1 999 8887766 | <i class="fa-solid fa-envelope text-muted"></i> shop@bootsrap.com
 				</div>
 			</div>
 		</div>
@@ -40,22 +40,38 @@
 	<section class="">
 		<div class="container">
 			<div class="row row-cols-auto g-2">
-				<div class="col-sm-4 text-start mt-4 d-none d-sm-none d-md-none d-lg-block">
-					<i class="fa-solid fa-user fa-2xl m-4"></i>|
-					<i class="fa-solid fa-cart-arrow-down fa-2xl m-4"></i>|
-					<i class="fa-solid fa-heart fa-2xl m-4"></i>|
-					<i class="fa-solid fa-arrow-right-to-bracket fa-2xl m-4"></i>
-									
+				
+				<div class="col-sm-4 text-start">
+					 <img src="https://www.britefish.net/wp-content/uploads/2019/07/logo-bootstrap-2.png" class="rounded d-block w-50" alt="...">
 				</div>
 				<div class="col-sm-4 text-center">
-					 <img src="https://www.britefish.net/wp-content/uploads/2019/07/logo-bootstrap-2.png" class="rounded mx-auto d-block w-50" alt="...">
-				</div>
-				<div class="col-sm-4 text-end">
 					<form class="d-flex m-4">
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-secondary" type="submit">Search</button>
 					</form>
 					
+				</div>
+				<div class="col-sm-4 text-end m-auto d-none d-sm-none d-md-none d-lg-block">
+					<button type="button" class="btn  btn-outline-secondary">
+						<i class="fa-solid fa-user"></i>
+					</button>	
+					<button type="button" class="btn btn-outline-secondary position-relative">
+					  <i class="fa-solid fa-cart-arrow-down"></i>
+					  <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger">
+						4
+						<span class="visually-hidden">unread messages</span>
+					  </span>
+					</button>	
+					<button type="button" class="btn btn-outline-secondary position-relative">
+					  <i class="fa-solid fa-heart"></i>
+					  <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger">
+						3
+						<span class="visually-hidden">unread messages</span>
+					  </span>
+					</button>
+					<button type="button" class="btn  btn-outline-secondary">
+						<i class="fa-solid fa-arrow-right-to-bracket"></i>
+					</button>					
 				</div>
 			</div>
 		</div>
@@ -64,13 +80,28 @@
 	<section class="nav bg-light shadow">
 		<div class="container ">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">	
-		  <div class="container-fluid">
 			<div class="d-lg-none d-xl-none">
-				<i class="fa-solid fa-user fa-lg m-1"></i>|
-				<i class="fa-solid fa-cart-arrow-down fa-lg m-1"></i>|
-				<i class="fa-solid fa-heart fa-lg m-1"></i>|
-				<i class="fa-solid fa-arrow-right-to-bracket fa-lg m-1"></i>
-			</div>
+				<button type="button" class="btn  btn-outline-secondary">
+						<i class="fa-solid fa-user"></i>
+					</button>	
+					<button type="button" class="btn btn-outline-secondary position-relative">
+					  <i class="fa-solid fa-cart-arrow-down"></i>
+					  <span class="position-absolute top-1 start-0 translate-middle badge rounded-pill bg-danger">
+						4
+						<span class="visually-hidden">unread messages</span>
+					  </span>
+					</button>	
+					<button type="button" class="btn btn-outline-secondary position-relative">
+					  <i class="fa-solid fa-heart"></i>
+					  <span class="position-absolute top-1 start-0 translate-middle badge rounded-pill bg-danger">
+						3
+						<span class="visually-hidden">unread messages</span>
+					  </span>
+					</button>
+					<button type="button" class="btn  btn-outline-secondary">
+						<i class="fa-solid fa-arrow-right-to-bracket"></i>
+					</button>					
+				</div>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
@@ -94,6 +125,19 @@
 					<li><a class="dropdown-item" href="#">Accessories here</a></li>
 				  </ul>
 				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Pages
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#">Product Detail</a></li>
+					<li><a class="dropdown-item" href="#">Category grid</a></li>
+					<li><a class="dropdown-item" href="#">Wishlist</a></li>
+					<li><a class="dropdown-item" href="#">Compare</a></li>
+					<li><a class="dropdown-item" href="#">Cart</a></li>
+					<li><a class="dropdown-item" href="#">Checkout</a></li>
+				  </ul>
+				</li>
 				<li class="nav-item">
 				  <a class="nav-link" href="#">Contacts</a>
 				</li>
@@ -111,8 +155,13 @@
 			<div class="container mt-3">
 				<div class="row row-cols-auto g-2">
 					<div class="col-sm-3">
-						<div class="list-group">
-						  <a href="#" class="list-group-item list-group-item-action">Cameras & Photography</a>
+						<div class="list-group dropend">
+						  <a href="#" class="list-group-item list-group-item-action" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Cameras & Photography</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						  </ul>
 						  <a href="#" class="list-group-item list-group-item-action">Cell Phones & Accessories</a>
 						  <a href="#" class="list-group-item list-group-item-action">TV, Audio & Surveillance</a>
 						  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
@@ -681,10 +730,22 @@
 <div class="container">
 <div class="row">
 
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
+<div class="offcanvas offcanvas-end offcanvas-xxl" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
 
 </div><!-- /.row -->
 </div><!-- /.container -->
+
+
 
 
 
@@ -695,7 +756,7 @@
 		<div class="container py-4">
 		<div class="row row-cols-2">
 			<div class="col">
-				<h2 class="modal-title" id="staticBackdropLabel">Product popup modul</h2>
+				<h2 class="modal-title" id="staticBackdropLabel">Bootstrap 5 Product popup modul</h2>
 			</div>
 			<div class="col text-end">
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -752,7 +813,156 @@
 					<div class="col">
 						<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i> (customer review ) 
 					</div>
+					Related Products
 				</div>
+				<div class="col-12 py-4">
+					    <ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="Description-tab" data-bs-toggle="tab" data-bs-target="#Description"
+								type="button" role="tab" aria-controls="Description" aria-selected="true">
+								Description</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="Reviews-tab" data-bs-toggle="tab" data-bs-target="#Reviews"
+								type="button" role="tab" aria-controls="Reviews" aria-selected="false">
+								Reviews</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="Comments-tab" data-bs-toggle="tab" data-bs-target="#Comments"
+								type="button" role="tab" aria-controls="Comments" aria-selected="false">
+								Comments</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="Description" role="tabpanel" aria-labelledby="personal-tab">
+							Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean himenaeos penatibus praesent fringilla nascetur semper ex. Est lobortis ac ante, class donec etiam est sollicitudin aenean. Aliquet in tempus phasellus sagittis, commodo quam ridiculus quis in. Interdum viverra nec eros sapien primis nullam ornare. Quis ipsum ex porttitor neque dictum hac mauris. Nisl vitae montes; conubia non erat hendrerit.
+						</div>
+						<div class="tab-pane fade" id="Reviews" role="tabpanel" aria-labelledby="employment-tab">
+							This is Reviews Information Tab
+						</div>
+						<div class="tab-pane fade" id="Comments" role="tabpanel" aria-labelledby="employment-tab">
+							This is Comments Information Tab
+						</div>
+					</div>
+				</div>
+				<div class="col-12 py-4">
+					<h2 class="mb-4">Related Products</h2>
+					<div class="row row-cols-1 row-cols-md-4 g-4">
+						<div class="col">
+							<div class="card h-100 shadow">
+								<img src="https://imgholder.ru/640x330/8493a8/adb9ca&text=Bootstrap+5/nRelated+Products&font=kelson" alt="Product">
+								<div class="card-body">
+										<div class="row row-cols-2">
+											<div class="col text-start">
+												Category title
+											</div>
+											<div class="col text-end">
+												<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+											</div>
+										</div>
+									<h5 class="card-title">Product title</h5> 
+									<p class="card-text">Est lobortis ac ante, class donec etiam est sollicitudin aenean.</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<p class="mb-0 h4"><small class="text-muted"><s>300</s></small> 199 €</p>
+										<div class="btn-group" role="group">
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												View
+											</button>
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 shadow">
+								<img src="https://imgholder.ru/640x330/8493a8/adb9ca&text=Bootstrap+5/nRelated+Products&font=kelson" alt="Product">
+								<div class="card-body">
+									<div class="row row-cols-2">
+										<div class="col text-start">
+											Category title
+										</div>
+										<div class="col text-end">
+											<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+									<h5 class="card-title">Product title</h5> 
+									<p class="card-text">Est lobortis ac ante, class donec etiam est sollicitudin aenean.</p>
+									<div class="d-flex justify-content-between align-items-center">
+											<p class="mb-0 h4"><small class="text-muted"><s>650</s></small> 559 €</p>
+										<div class="btn-group" role="group">
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												View
+											</button>
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 shadow">
+								<img src="https://imgholder.ru/640x330/8493a8/adb9ca&text=Bootstrap+5/nRelated+Products&font=kelson" alt="Product">
+								<div class="card-body">
+									<div class="row row-cols-2">
+										<div class="col text-start">
+											Category title
+										</div>
+										<div class="col text-end">
+											<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+									<h5 class="card-title">Product title</h5> 
+									<p class="card-text">Est lobortis ac ante, class donec etiam est sollicitudin aenean.</p>
+									<div class="d-flex justify-content-between align-items-center">
+											<p class="mb-0 h4">559 €</p>
+										<div class="btn-group" role="group">
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												View
+											</button>
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100 shadow">
+								<img src="https://imgholder.ru/640x330/8493a8/adb9ca&text=Bootstrap+5+/nRelated+Products&font=kelson" alt="Product">
+								<div class="card-body">
+									<div class="row row-cols-2">
+										<div class="col text-start">
+											Category title
+										</div>
+										<div class="col text-end">
+											<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+									<h5 class="card-title">Product title</h5> 
+									<p class="card-text">Est lobortis ac ante, class donec etiam est sollicitudin aenean.</p>
+									<div class="d-flex justify-content-between align-items-center">
+											<p class="mb-0 h4">159 €</p>
+										<div class="btn-group" role="group">
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												View
+											</button>
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 		<!-- Img product end -->
@@ -801,7 +1011,7 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<p class="text-center">© 2010-2024 <a href="https://siaweb.ru" class="link-danger">Studio of Image Art</a>. Made with by <a href="https://siaweb.ru" class="link-secondary">siaweb</a></p>
+			<p class="text-center">© 2010-2024 BooShop <a href="https://siaweb.ru" class="link-danger">Studio of Image Art</a>. Made with by <a href="https://siaweb.ru" class="link-secondary">siaweb</a> v.0.012</p>
 		</div>
 	</div>
 </footer>	
